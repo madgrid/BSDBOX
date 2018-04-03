@@ -1,0 +1,267 @@
+! Tuxhat Special CLS .Xdefaults
+URxvt.perl-ext-common: default,matcher,tabbed
+URxvt.tabbed.tabbar-fg: -2
+URxvt.tabbed.tabbar-bg: -1
+URxvt.tabbed.tab-fg: -2
+URxvt.tabbed.tab-bg: 1
+
+xterm*ScrollBar: false
+*foreground:           #7cafc2
+*background:           #181818
+urxvt*background: #181512
+!urxvt*background: #141414
+urxvt*foreground: #FFFFD4
+urxvt*cursorColor: #FFFFD4
+ 
+!! black dark/light
+urxvt*color0: #141414
+urxvt*color8: #141414
+ 
+!! red dark/light
+urxvt*color1: #C06D44
+urxvt*color9: #C06D44
+ 
+!! green dark/light
+urxvt*color2: #CCD88C
+urxvt*color10: #CCD88C
+ 
+!! yellow dark/light
+urxvt*color3: #E2C47E
+urxvt*color11: #E2C47E
+ 
+!! blue dark/light
+! urxvt*color4: #5A5E62
+! urxvt*color12: #5A5E62
+urxvt*color4: #5A5E62
+urxvt*color12: #5A5E62
+ 
+!! magenta dark/light
+urxvt*color5: #D0DC8E
+urxvt*color13: #D0DC8E
+ 
+!! cyan dark/light
+urxvt*color6: #8A989B
+urxvt*color14: #8A989B
+ 
+!! white dark/light
+urxvt*color7: #FFFFD4
+urxvt*color15: #FFFFD4
+ 
+URxvt.scrollBar: true
+URxvt.scrollstyle: plain
+URxvt.scrollBar_right: true
+URxvt.scrollColor: #1A1A1A
+
+! example
+URxvt.geometry: 184x51
+URxvt*.transparent: true
+URxvt*termName: rxvt
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+URxvt*.shading: 15
+!URxvt.font:      -xos4-terminus-medium-*-normal-*-14-*-*-*-*-*-*-*
+URxvt.font: xft:Monaco:size=12
+!URxvt.font: xft:Menlo:size=9
+!urxvt*font:     latin-*-*-*-12-*-*-*-*-*-iso8859-1
+!urxvt*boldFont: latin-bold-*-*-*-12-*-*-*-*-*-iso8859-1
+#!/bin/env bash
+! mwm DW-Motif Scheme by:cypx
+! Active border colors
+Mwm*activeForeground: #000000000000
+Mwm*activeBackground: #987867
+Mwm*activeBackgroundPixmap: /usr/home/raz0redge/motif/active.xpm
+Mwm*activeTopShadowColor: #c4ada1
+Mwm*activeTopShadowPixmap: unspecified_pixmap
+Mwm*activeBottomShadowColor: #584940
+Mwm*activeBottomShadowPixmap: unspecifie!
+! Window manager menu colors
+! This is used for color customization to match the menu colors
+! to the active or inactive borders.  If this is set to 0,
+! the menu colors will not be changed during customization
+Mwm*matchMenuColors : 1
+Mwm*menu*foreground: #000000000000
+Mwm*menu*background: #caaa91
+Mwm*menu*backgroundPixmap: /usr/home/raz0redge/motif/inactive.xpm
+Mwm*menu*topShadowColor: #dbbca3
+Mwm*menu*topShadowpixmap: unspecified_pixmap
+Mwm*menu*bottomShadowColor: #997559
+Mwm*menu*bottomShadowPixmap: unspecified_pixmap
+!
+! Icon image and box colors
+Mwm*iconImageForeground: #000000000000
+Mwm*iconImageBackground: #caaa91
+Mwm*iconImageBackgroundPixmap: /usr/home/raz0redge/motif/active.xpm
+Mwm*iconImageTopShadowColor: #dbbca3
+Mwm*iconImageTopShadowPixmap: unspecified_pixmap
+Mwm*iconImageBottomShadowColor: #997559
+Mwm*iconImageBottomShadowPixmap: unspecified_pixmap
+Mwm*iconImageAutoShade: True
+!
+! Set the trough color to set the iconbox color
+Mwm*iconbox.IBframe.IBsWindow.hScrollBar.TroughColor:
+Mwm*iconbox.IBframe.IBsWindow.vScrollBar.TroughColor:
+!
+! Inactive border colors
+Mwm*foreground: #000000000000
+Mwm*background: #caaa91
+Mwm*backgroundPixmap: /usr/home/raz0redge/motif/inactive.xpm
+Mwm*topShadowColor: #dbbca3
+Mwm*topShadowPixmap: unspecified_pixmap
+Mwm*bottomShadowColor: #997559
+Mwm*bottomShadowPixmap: unspecified_pixmap
+Mwm*autoShade: True
+!
+! Matte colors
+Mwm*matteForeground: #000000000000
+Mwm*matteBackground: #caaa91
+Mwm*matteTopShadowColor: #dbbca3
+Mwm*matteTopShadowPixmap: unspecified_pixmap
+Mwm*matteBottomShadowColor: #997559
+Mwm*matteBottomShadowPixmap: unspecified_pixmap
+Mwm*matteAutoShade: True
+!
+!
+! Set to greater than 0 pixels to add an additional border
+! between border and the window
+Mwm*matteWidth: 0
+!
+! Mwm fonts
+Mwm*fontList: -xos4-terminus-medium-*-normal-*-12-*-*-*-*-*-*-*
+!
+! Set to Explicit to determine focus by clicking on the window
+! or border
+! Set to Pointer to determine focus based on the location of
+! the pointer
+Mwm*keyboardFocusPolicy: Pointer
+!
+! Policy when the window with focus is minimized or removed
+! if focuspolicy is explicit, set to true to give focus to
+! the window with previous focus
+Mwm*autoKeyFocus: True
+!
+! Policy when the window with focus is raised
+! if focuspolicy is explicit, set to true to give focus to
+! the window that is raised
+Mwm*raiseKeyFocus: True
+!
+! if focuspolicy is explicit, set to true to give a window focus
+! when it is restored from an icon
+Mwm*deiconifyKeyFocus: True
+!
+! Set to True to raise a window when it is given focus
+! Set to False to keep the stacking order the same when a window
+! is given focus
+Mwm*focusAutoRaise: True
+!
+! if focuspolicy is explicit,
+! set to true to give input focus to a window when it is mapped
+Mwm*startupKeyFocus: True
+!
+! Set to True to place and size windows interactively
+! false to use default placement
+Mwm*interactivePlacement: False
+!
+! Delay time to retry interactive placement if it fails
+Mwm*interPlaceDelay: 1000
+!
+! Number of retries for interactive placement before using default
+! placement
+Mwm*interPlaceRetries: 4
+!
+! This determines default placement of window when there is
+! no specification by the user
+! Set to true to have Mwm stagger the positions of a window
+! from the top left corner
+Mwm*clientAutoPlace: False
+!
+! Set to true to include the border when positioning a window
+! Set to false to exclude the border
+Mwm*positionIsFrame: False
+!
+! Set to true to gray icons in the iconbox
+! when the icons are not in the minimized state
+Mwm*fadeNormalIcon: True
+!
+! Border decorations
+! Set to all for all decorations
+! Set to any of the following to limit decorations:
+!    maximize minimize resizeh border menu title
+! Set to none for no decorations
+Mwm*clientDecoration: all
+!
+! Set to True for compatibility for running XUI applications
+Mwm*useDECMode: True
+!
+! Set to True to display icon box
+! Set to False to displays icons without the icon box
+Mwm*useIconBox: False
+!
+Mwm*iconBoxSBDisplayPolicy:       vertical
+!
+! Icon decorations
+! Set to all or any of the following to control what is
+! displayed with an icon
+! activelabel label image
+Mwm*iconDecoration: activelabel label image
+!
+! Position of Icon box
+! width x height + x position + y position
+Mwm*iconBoxGeometry: 14x1+0+2000
+!
+! Size of resize border
+Mwm*resizeBorderWidth: 6
+!
+! When moving a window,
+! if this is set to True, the entire window will move
+! if this is set to False, an outline will move
+Mwm*moveOpaque: False
+!
+! Set this to True to ignore the appropriate MOD keys for window
+! manager operations depending on the keyboard and language
+Mwm*ignoreModKeys: False
+! Set this to True to always ignore MOD2, MOD3, MOD4 keys for
+! window ! manager operations regardless of the keyboard and
+! language
+Mwm*ignoreAllModKeys: False
+!
+Mwm*transientDecoration: Title resize
+Mwm*workspaceMenu: True
+!
+! How to place icons when a window is minimized
+! Set to left top for top of screen left to right
+! Set to left bottom for bottom of screen left to right
+! Set to right top for top of screen right to left
+! Set to right bottom for bottom of screen right to left
+! Set to top left for left of screen top to bottom
+! Set to top right for right of screen top to bottom
+! Set to bottom left for left of screen bottom to top
+! Set to bottom right for right of screen bottom to top
+Mwm*iconPlacement: top left
+!
+! Set to True to place icons according to iconPlacement resource
+! Set to False for interactive arrangement
+Mwm*iconAutoPlace: True
+!
+! Set to numbers of pixels between the edge of screen and the
+! icons
+Mwm*iconPlacementMargin: 1
+!
+! Title for icon box
+Mwm*iconBoxTitle: Icon box
+!
+Mwm*restartSettings: True
+!
+! Feedback information
+! options are all or none or
+! behavior move resize placement quit restart kill
+Mwm*showFeedback:      behavior placement quit restart kill
+!
+! Resize Mwm dialog boxes to fit on screen
+*DXmfitToScreenPolicy:      as_needed
+!
+! Double-click on window menu (on border of window)
+! Set to true to enable double-click on window menu to "close"
+! a window
+Mwm*wMenuButtonClick2: Falsed_pixmap
+Mwm*activeAutoShade: True
+
+
