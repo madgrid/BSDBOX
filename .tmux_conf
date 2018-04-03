@@ -1,0 +1,52 @@
+# Tmux config by: RAZ0yellowGE for FreeBSD-10.0 OpenBox
+# set command prefix for tmux
+set-option -g prefix C-a
+unbind C-r
+ 
+# set vi mode keys
+setw -g mode-keys vi
+ 
+# set some bindings for moving around terminals (vim-like)
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+ 
+# Define my custom menu bar
+# status bar colors
+set -g status-bg default
+set -g status-fg yellow
+ 
+# alignment settings
+set-option -g status-position top
+set-option -g status-justify centre
+ 
+# status left options
+set-option -g status-left '#[fg=yellow,bold]« #[bg=default,fg=white,bold]#S#[fg=yellow,bold] »'
+set-option -g status-left-length 20
+ 
+# window list options
+setw -g automatic-rename on
+set-option -g status-justify centre
+set-window-option -g window-status-format '#[fg=yellow]#I#[fg=white]:#[default]#W#[fg=white]#F'
+set-window-option -g window-status-current-format '#[fg=yellow,bold]« #[bg=default,fg=white,bold]#I#[bg=default,fg=yellow]:#[fg=white]#W#[fg=dim]#F#[fg=yellow] »'
+set -g base-index 1
+ 
+# status right options
+ 
+set -g status-right '#[fg=yellow,bold]« #[fg=white,bold]%Y-%m-%d #[fg=white,bold]%H:%M#[default] #($HOME/bin/battery)#[fg=yellow,bold]»'
+ 
+ 
+# bind a reload key
+bind R source-file ~/.tmux.conf \; display-message " Config reloaded..".
+ 
+ 
+# Set Copy-Mode settings
+bind [ copy-mode
+bind -t vi-copy v begin-selection
+bind -t vi-copy y copy-selection
+bind -t vi-copy V rectangle-toggle
+bind ] paste-buffer
+ 
+# buffer
+bind Space choose-buffer
